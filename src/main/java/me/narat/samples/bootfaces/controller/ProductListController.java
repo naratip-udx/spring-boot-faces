@@ -15,10 +15,10 @@ import lombok.RequiredArgsConstructor;
 import me.narat.samples.bootfaces.model.Product;
 import me.narat.samples.bootfaces.persistence.ProductRepository;
 
+@Scope("session")
 @RequiredArgsConstructor
-@Scope(value = "session")
-@Component(value = "productListCtrl")
-@ELBeanName(value = "productListCtrl")
+@Component("productListCtrl")
+@ELBeanName("productListCtrl")
 @Join(path = "/", to = "/product/product-list.jsf")
 public class ProductListController {
 

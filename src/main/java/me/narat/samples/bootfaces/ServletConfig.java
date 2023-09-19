@@ -35,8 +35,6 @@ public class ServletConfig {
 
 	@Bean
 	ServletListenerRegistrationBean<ServletContextListener> facesStartupServletContextListener() {
-		ServletListenerRegistrationBean<ServletContextListener> bean = new ServletListenerRegistrationBean<>();
-		bean.setListener(new StartupServletContextListener());
-		return bean;
+		return new ServletListenerRegistrationBean<>(new StartupServletContextListener());
 	}
 }

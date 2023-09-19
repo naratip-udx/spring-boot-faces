@@ -9,10 +9,10 @@ import lombok.RequiredArgsConstructor;
 import me.narat.samples.bootfaces.model.Product;
 import me.narat.samples.bootfaces.persistence.ProductRepository;
 
+@Scope("session")
 @RequiredArgsConstructor
-@Scope(value = "session")
-@Component(value = "productCtrl")
-@ELBeanName(value = "productCtrl")
+@Component("productCtrl")
+@ELBeanName("productCtrl")
 @Join(path = "/product", to = "/product/product-form.jsf")
 public class ProductController {
 

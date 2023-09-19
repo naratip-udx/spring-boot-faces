@@ -20,7 +20,8 @@
 	                    <p:inputText id="name" value="#{productCtrl.product.name}" />
 	                    <p:outputLabel for="price" value="Price: " />
 	                    <p:inputNumber id="price" value="#{productCtrl.product.price}" />
-	                    <h:commandButton value="Save" action="#{productCtrl.save}" />
+	                    <p:spacer />
+	                    <p:commandButton value="Save" action="#{productCtrl.save}" />
 	                </h:panelGrid>
 	            </p:panel>
 	        </h:form>
