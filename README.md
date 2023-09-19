@@ -1,5 +1,7 @@
 # spring-boot-faces
 
-Demo project for Spring Boot JSF
+Demo project for integrate JSF with Spring Boot
 
-Ref. https://auth0.com/blog/developing-jsf-applications-with-spring-boot/
+&nbsp;
+
+Ref. <https://auth0.com/blog/developing-jsf-applications-with-spring-boot/>
